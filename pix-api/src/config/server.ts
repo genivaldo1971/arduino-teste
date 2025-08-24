@@ -4,7 +4,7 @@ require('dotenv').config();
 const dated = require('date-and-time')
 
 
-const PORT: string | number = process.env.PORT || 5001;
+const PORT: string | number = process.env.PORT || 8080;
 
 const app = express();
 
