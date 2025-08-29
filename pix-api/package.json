@@ -8,7 +8,7 @@
       "dev": "nodemon -x ts-node src/config/server.ts",
       "build": "tsc",
       "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    }, 
     "keywords": [],
     "author": "",
     "license": "ISC",
