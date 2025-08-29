@@ -288,7 +288,7 @@ app.post("/rota-recebimento", async (req, res) => {
         console.log("query");
         console.log(qy);
 
-        if (ip != '34.193.116.226') {
+        if (ip?.includes('34.193.116.226')) {
             return res.status(401).json({ "unauthorized": "unauthorized" });
         }
 
