@@ -293,6 +293,8 @@ app.post("/rota-recebimento", async (req, res) => {
         }
 
 
+        console.log("query");
+        console.log(qy);
         if (qy != 'myhash1234' && qy != 'myhash1234/pix') {
             return res.status(401).json({ "unauthorized": "unauthorized" });
         }
@@ -317,43 +319,43 @@ app.post("/rota-recebimento", async (req, res) => {
                 console.log("Creditando valor do pix na máquina 3");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2456") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix4 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 4");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2789") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix5 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 5");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2987") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix6 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 6");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2654") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix7 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 7");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2321") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix8 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 8");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2741") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix9 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 9");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2852") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix10 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 10");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2963") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix11 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 11");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2159") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix12 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 12");
             }
             if (req.body.pix[0].txid == "0f0a2b49c3844d95a2b4e2951") {
-                valorDoPixy = req.body.pix[0].valor;
+                valorDoPix13 = req.body.pix[0].valor;
                 console.log("Creditando valor do pix na máquina 13");
             }
             
